@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+index
+{% endblock title %}
+
+{% block content %}
+<h2>{{ question.question_text }}</h2>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'polls:vote' question.id %}" method="post">
+{% csrf_token %}
+
+{% for choice in question.choice_set.all %}
+    <p>
+    <label for="choice{{ forloop.counter }}">
+    <input class="with-gap" type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+    <span>{{ choice.choice_text }}</span>
+    </label>
+    </p>
+{% endfor %}
+
+<button class="btn waves-effect waves-light" type="submit" name="action">Vote</button>
+
+</form>
+
+{% endblock content %}
