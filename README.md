@@ -24,4 +24,6 @@ At this point you'll see no active polls, so let's go ahead and add some data. W
 Now go back and check the polls page, and go ahead and vote.
 
 ### Demo
-This app is live at http://gpmateen.pythonanywhere.com/polls/ thanks to [pythonanywhere](https://www.pythonanywhere.com/)
+This app is live [here](http://gpmateen.pythonanywhere.com/polls/).
+
+A big thanks to [pythonanywhere](https://www.pythonanywhere.com/)
