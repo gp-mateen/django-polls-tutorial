@@ -1,5 +1,5 @@
 import os
-os.environ['DJANGO_SETTINGS_MODULE'] = 'django_polls_tutorial.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'django_tutorials.settings'
 
 import django
 django.setup()

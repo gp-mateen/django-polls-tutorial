@@ -1,5 +1,5 @@
-# Django Polls Tutorial
-Django polls tutorial with materialize css.
+# Django Tutorials
+Django tutorials project hosting applications such as polls etc., (more to be added...)
 
 ## Setup
 
